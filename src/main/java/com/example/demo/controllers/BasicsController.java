@@ -28,6 +28,11 @@ public class BasicsController {
         return "home";
     }
 
+    @RequestMapping("/random-page")
+    public String randomPage() {
+        return "randomPage";
+    }
+
 
     @RequestMapping("/enter-person")
     public String enterPerson() {
