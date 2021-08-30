@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
 </head>
 <body>
 
-
 <h1>This is where we live</h1>
+
+<ul th:each="person : ${allPeople}">
+    <li th:text="${person.firstName}"></li>
+</ul>
+
 </body>
 </html>
