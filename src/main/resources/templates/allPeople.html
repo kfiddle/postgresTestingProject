@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All Our People</title>
+</head>
+<body>
+
+<h1>All our people include...</h1>
+
+<ul th:each="person : ${allPeople}">
+    <li th:text="${person.firstName}"></li>
+
+</ul>
+
+
+</body>
+</html>
